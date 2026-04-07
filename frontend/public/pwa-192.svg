@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-labelledby="title desc">
+  <title id="title">Rocket Log icon</title>
+  <desc id="desc">A stylized orange rocket badge for the Rocket Log app.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff3d4" />
+      <stop offset="100%" stop-color="#ffd3b0" />
+    </linearGradient>
+    <linearGradient id="rocket" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f36b21" />
+      <stop offset="100%" stop-color="#ff9f1c" />
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="42" fill="url(#bg)" />
+  <circle cx="96" cy="96" r="70" fill="#153243" opacity="0.12" />
+  <path d="M110 28c20 18 27 40 22 66l16 19-18 7-7 18-19-16c-26 5-48-2-66-22 7-39 33-65 72-72Z" fill="url(#rocket)" />
+  <circle cx="101" cy="80" r="14" fill="#fff8ef" />
+  <path d="M54 132l22-8-14 14 6 20-18-18-20 6 14-14-8-22 18 14Z" fill="#153243" />
+</svg>

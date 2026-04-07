@@ -1,0 +1,30 @@
+name: rocket-squad
+services:
+  mongo:
+    image: mongo:7
+    container_name: rocket-squad-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - rocket-squad-mongo-data:/data/db
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: rocket-squad-backend
+    depends_on:
+      - mongo
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__MongoDb: mongodb://mongo:27017
+      MongoDb__ConnectionString: mongodb://mongo:27017
+      MongoDb__DatabaseName: rocket_log
+      Auth__Enabled: "false"
+    ports:
+      - "8080:8080"
+
+volumes:
+  rocket-squad-mongo-data:

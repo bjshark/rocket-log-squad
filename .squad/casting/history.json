@@ -1,0 +1,32 @@
+{
+  "assignments": [
+    {
+      "assignment_id": "init-2026-04-04",
+      "universe": "The Usual Suspects",
+      "created_at": "2026-04-04T00:00:00Z",
+      "team": [
+        {
+          "name": "Keaton",
+          "role": "Lead",
+          "character_traits": "Relentless, meticulous, calm under pressure"
+        },
+        {
+          "name": "Hockney",
+          "role": "Frontend Dev",
+          "character_traits": "Precise, efficient, focus on user experience"
+        },
+        {
+          "name": "Fenster",
+          "role": "Backend Dev",
+          "character_traits": "Detail-oriented, methodical, high reliability"
+        },
+        {
+          "name": "Kobayashi",
+          "role": "Tester",
+          "character_traits": "Sharp observer, rigorous standards, edge-case finder"
+        }
+      ],
+      "rationale": "Noir universe implies precision, pressure, and reliability — fitting for a well-scoped greenfield project."
+    }
+  ]
+}

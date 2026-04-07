@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1170" height="2532" viewBox="0 0 1170 2532" role="img" aria-labelledby="title desc">
+  <title id="title">Rocket Log splash portrait</title>
+  <desc id="desc">Portrait splash screen for Rocket Log PWA installation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8ef" />
+      <stop offset="100%" stop-color="#ffd9bd" />
+    </linearGradient>
+    <linearGradient id="stripe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f36b21" />
+      <stop offset="100%" stop-color="#ff9f1c" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1170" height="2532" fill="url(#bg)" />
+  <circle cx="890" cy="430" r="340" fill="#153243" opacity="0.08" />
+  <circle cx="260" cy="2110" r="420" fill="#153243" opacity="0.06" />
+
+  <g transform="translate(585 1160)">
+    <rect x="-190" y="-190" width="380" height="380" rx="84" fill="#fff3d4" />
+    <circle cx="0" cy="0" r="132" fill="#153243" opacity="0.14" />
+    <path d="M70-140c38 34 52 76 43 126l30 36-33 13-13 33-36-30C11 47-31 33-65-5c14-75 63-124 135-135Z" fill="url(#stripe)"/>
+    <circle cx="51" cy="-41" r="24" fill="#fff8ef" />
+    <path d="M-95 67l37-13-24 24 11 34-31-31-34 11 24-24-13-37 30 24Z" fill="#153243" />
+  </g>
+
+  <rect x="0" y="1450" width="1170" height="10" fill="url(#stripe)" opacity="0.9" />
+  <text x="585" y="1610" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="104" font-weight="700" fill="#153243">
+    Rocket Log
+  </text>
+  <text x="585" y="1705" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="42" fill="#3b4d5b">
+    Inventory and launch journaling in the field
+  </text>
+</svg>

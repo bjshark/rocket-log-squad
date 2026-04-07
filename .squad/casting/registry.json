@@ -1,0 +1,36 @@
+{
+  "agents": [
+    {
+      "persistent_name": "Keaton",
+      "universe": "The Usual Suspects",
+      "cast_date": "2026-04-04",
+      "role": "Lead",
+      "legacy_named": false,
+      "status": "active"
+    },
+    {
+      "persistent_name": "Hockney",
+      "universe": "The Usual Suspects",
+      "cast_date": "2026-04-04",
+      "role": "Frontend Dev",
+      "legacy_named": false,
+      "status": "active"
+    },
+    {
+      "persistent_name": "Fenster",
+      "universe": "The Usual Suspects",
+      "cast_date": "2026-04-04",
+      "role": "Backend Dev",
+      "legacy_named": false,
+      "status": "active"
+    },
+    {
+      "persistent_name": "Kobayashi",
+      "universe": "The Usual Suspects",
+      "cast_date": "2026-04-04",
+      "role": "Tester",
+      "legacy_named": false,
+      "status": "active"
+    }
+  ]
+}
