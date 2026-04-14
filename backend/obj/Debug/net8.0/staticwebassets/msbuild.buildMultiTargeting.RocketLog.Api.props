@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/RocketLog.Api.props" />
-</Project>
