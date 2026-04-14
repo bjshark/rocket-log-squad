@@ -1,7 +1,170 @@
-# Squad: ignore runtime state (logs, inbox, sessions)
+###############################################################################
+# .NET / ASP.NET Core
+###############################################################################
+
+# Build output
+bin/
+obj/
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.pidb
+*.booproj
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Test results
+TestResults/
+*.trx
+BenchmarkDotNet.Artifacts/
+
+# Publish output
+publish/
+**/Properties/PublishProfiles/*.pubxml.user
+
+# Sensitive / local config overrides
+# Keep appsettings.json and appsettings.Development.json in source control
+# but exclude any secrets or environment-specific overrides
+appsettings.Production.json
+appsettings.Staging.json
+secrets.json
+.secrets/
+
+# User secrets (dotnet user-secrets)
+# These live in %APPDATA%\Microsoft\UserSecrets but guard against accidental commits
+**/UserSecrets/
+
+###############################################################################
+# Node / React / Vite (frontend)
+###############################################################################
+
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# Vite PWA dev-mode service worker artifacts
+dev-dist/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Environment variable files (local overrides; .env itself may be committed if needed)
+.env.local
+.env.*.local
+.env.production
+.env.staging
+
+# Package manager lockfile variants (keep whichever one the project uses)
+# Uncomment the lockfiles you do NOT use:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+###############################################################################
+# OS & Editor artifacts
+###############################################################################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# VS Code workspace settings (keep extensions.json; ignore personal settings)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+
+# JetBrains / Rider
+.idea/
+*.iml
+*.iws
+
+###############################################################################
+# Logs
+###############################################################################
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+###############################################################################
+# Docker
+###############################################################################
+
+# Ignore local docker override files with secrets
+docker-compose.override.yml
+
+###############################################################################
+# AI agents / tools — RUNTIME & CACHE only
+# Instruction files, skill definitions, rules, and project config
+# that belong to the codebase are intentionally kept in source control.
+###############################################################################
+
+# --- GitHub Copilot ---
+# Keep: .github/copilot-instructions.md, COPILOT.md
+.github/.copilot-cache/
+
+# --- Cursor AI ---
+# Keep: .cursorrules, .cursor/rules/**  (project rule definitions)
+.cursor/cache/
+.cursor/logs/
+.cursor/tmp/
+
+# --- Aider (aider.chat) ---
+# Keep: .aider.conf.yml if used for project-level config
+.aider/
+.aider.chat.history.md
+.aider.input.history
+
+# --- Continue.dev ---
+# Keep: .continue/config.json (project config)
+.continue/cache/
+.continue/logs/
+.continue/sessions/
+
+# --- Windsurf / Cascade ---
+.windsurf/cache/
+.windsurf/logs/
+
+# --- Generic LLM tool caches ---
+.llm-cache/
+.ai-cache/
+.agent-cache/
+
+# --- Squad (multi-agent workflow) ---
+# Keep: .squad/ config, workstream definitions, skill/task files
+# Ignore runtime state, logs, and machine-local activation
 .squad/orchestration-log/
 .squad/log/
 .squad/decisions/inbox/
 .squad/sessions/
-# Squad: SubSquad activation file (local to this machine)
 .squad-workstream
